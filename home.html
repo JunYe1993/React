@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+
+    <!-- 引入 React -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+
+      const e = React.createElement;
+      class HelloWorld extends React.Component {
+        render() {
+          return e('h1', {}, 'Hello World~~~');
+        }
+      }
+      const domContainer = document.querySelector('#root');
+      ReactDOM.render(e(HelloWorld), domContainer);
+
+    </script>
+  </body>
+</html>
