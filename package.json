@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/JunYe1993/React/issues"
   },
-  "homepage": "https://github.com/JunYe1993/React#readme"
+  "homepage": "https://github.com/JunYe1993/React#readme",
+  "type": "module"
 }
