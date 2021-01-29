@@ -1,10 +1,9 @@
-import 'fs'
 import { readFile } from 'fs';
 
 function start_requset_handle (response) {
     console.log("Start request.");
     // 這路徑是依照 node __dir__/index.js 當下路徑為 root
-    readFile("Learning/10.React - CDN-based/hello.html", function(err, data){
+    readFile("Learning/10.Node\&ES6\&React\ -\ Read\ file/hello.html", function(err, data){
         if (err) throw err;
         response.write(data);
         response.end();
